@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="@dimen/spacing_large"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/select_your_location"/>
+
+    <View
+        android:layout_width="@dimen/margin_1"
+        android:layout_height="@dimen/margin_12"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlAddress"
+        style="@style/TextInputLayoutStyleOutlinedBoxRtl"
+        app:endIconMode="clear_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:helperTextEnabled="true"
+        android:hint="@string/address"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/SelectEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacing_large" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirmation"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/confirmation"
+        android:visibility="visible"
+        app:strokeColor="@color/accent"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/accent"
+        app:cornerRadius="@dimen/margin_4"
+        app:rippleColor="@color/primary_dark" />
+
+    <View
+
+        android:layout_width="0dp"
+        android:layout_height="@dimen/spacing_middle" />
+
+</LinearLayout>

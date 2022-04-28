@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_4"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/clParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:gravity="end"
+        android:orientation="vertical">
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="@dimen/margin_8"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtNameAndFamily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:gravity="end|center_vertical"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Overline" />
+
+            <View
+                android:layout_width="@dimen/margin_8"
+                android:layout_height="@dimen/margin_1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                app:drawableTint="@color/primary_text"
+                android:gravity="end|center_vertical"
+                android:drawablePadding="@dimen/margin_8"
+                android:textStyle="bold"
+                android:text="@string/name_and_family"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                app:drawableEndCompat="@drawable/ic_account_circle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="@dimen/margin_8"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:gravity="end|center_vertical"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Overline" />
+
+            <View
+                android:layout_width="@dimen/margin_8"
+                android:layout_height="@dimen/margin_1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                app:drawableTint="@color/primary_text"
+                android:gravity="end|center_vertical"
+                android:drawablePadding="@dimen/margin_8"
+                android:textStyle="bold"
+                android:text="@string/mobile"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                app:drawableEndCompat="@drawable/ic_mobile" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="@dimen/margin_8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/margin_1"
+                android:layout_height="@dimen/margin_8"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                app:drawableTint="@color/primary_text"
+                android:gravity="end|center_vertical"
+                android:textStyle="bold"
+                android:text="@string/address"
+                android:drawablePadding="@dimen/margin_8"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"/>
+
+            <View
+                android:layout_width="@dimen/margin_8"
+                android:layout_height="@dimen/margin_1"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text"
+                android:paddingLeft="@dimen/margin_4"
+                android:paddingRight="@dimen/margin_4"
+                android:paddingTop="@dimen/margin_2"
+                android:paddingBottom="@dimen/margin_2"
+                android:gravity="start"
+                android:lines="2"
+                android:minLines="2"
+                android:singleLine="false"
+                android:ellipsize="end"
+                android:ems="10"
+                android:maxLines="2"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Overline" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/margin_1"
+            android:layout_height="@dimen/margin_8"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

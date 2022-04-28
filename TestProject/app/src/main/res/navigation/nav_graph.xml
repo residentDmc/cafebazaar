@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addressListFragment">
+
+    <fragment
+        android:id="@+id/saveAddressFragment"
+        android:name="com.achareh.testproject.ui.view.fragment.SaveAddressFragment"
+        android:label="fragment_save_address"
+        tools:layout="@layout/fragment_save_address" />
+    <fragment
+        android:id="@+id/addressListFragment"
+        android:name="com.achareh.testproject.ui.view.fragment.AddressListFragment"
+        android:label="fragment_address_list"
+        tools:layout="@layout/fragment_address_list" >
+        <action
+            android:id="@+id/action_addressListFragment_to_saveAddressFragment"
+            app:destination="@id/saveAddressFragment"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+</navigation>

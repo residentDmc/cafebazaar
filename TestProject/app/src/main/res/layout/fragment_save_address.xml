@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='utf-8'?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/lnParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/margin_1"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:fontFamily="@font/iran_sans"
+                        android:text="@string/register"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="@color/grey_60"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.utils.widget.ImageFilterButton
+                        android:id="@+id/imgBtnBack"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="end"
+                        android:background="@color/transparent"
+                        android:rotation="180"
+                        android:tint="@color/grey_60"
+                        app:srcCompat="@drawable/ic_arrow_back" />
+                </LinearLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarSize"
+                android:gravity="end|center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:fontFamily="@font/iran_sans"
+                    android:text="@string/enter_your_login_information"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                    android:textColor="@color/grey_60"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlName"
+                    style="@style/TextInputLayoutStyleOutlinedBoxRtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    app:boxStrokeErrorColor="@color/color_red"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconTint="@color/color_red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/color_blue"
+                    android:textColorHint="@color/color_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/TypeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlFamily"
+                    style="@style/TextInputLayoutStyleOutlinedBoxRtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/family"
+                    app:boxStrokeErrorColor="@color/color_red"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconTint="@color/color_red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/color_blue"
+                    android:textColorHint="@color/color_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/TypeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlMobile"
+                    style="@style/TextInputLayoutStyleOutlinedBoxRtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_number"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/color_blue"
+                    android:textColorHint="@color/color_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/TypeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="11" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlPhoneNumber"
+                    style="@style/TextInputLayoutStyleOutlinedBoxRtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/color_blue"
+                    android:textColorHint="@color/color_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/TypeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="11" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_large">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tlAddress"
+                    style="@style/TextInputLayoutStyleOutlinedBoxRtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    app:boxStrokeErrorColor="@color/color_red"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconTint="@color/color_red"
+                    app:helperTextEnabled="true"
+                    app:hintTextColor="@color/color_blue"
+                    android:textColorHint="@color/color_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/SelectEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radio_flat_selector_left"
+                            android:button="@android:color/transparent"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/margin_24"
+                            android:paddingRight="@dimen/margin_24"
+                            android:text="@string/female"
+                            android:textColor="@color/radio_flat_text_selector" />
+
+                        <RadioButton
+                            android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radio_flat_selector_right"
+                            android:button="@android:color/transparent"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/margin_24"
+                            android:paddingRight="@dimen/margin_24"
+                            android:text="@string/male"
+                            android:textColor="@color/radio_flat_text_selector" />
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/iran_sans"
+                        android:text="@string/gender"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                        android:textColor="@color/color_blue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_margin="@dimen/spacing_large"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddressRegister"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:enabled="false"
+                    android:text="@string/address_registration"
+                    android:textAllCaps="false"
+                    android:textColor="@color/secondary_text"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/color_disable_button"
+                    app:cornerRadius="@dimen/margin_4"
+                    app:rippleColor="@color/primary_dark"
+                    app:strokeColor="@color/color_disable_button" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/lnProgressAddressRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:background="@drawable/button_primary_shape"
+                    android:visibility="gone">
+
+                    <com.wang.avi.AVLoadingIndicatorView
+                        android:layout_width="@dimen/margin_40"
+                        android:layout_height="@dimen/margin_40"
+                        android:indeterminate="true"
+                        app:indicatorColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="UnusedAttribute" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

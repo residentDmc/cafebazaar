@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Test Project</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic2hha2VyaWFuIiwiYSI6ImNsMml4cjFpYzBzMGkzanRwYWlsMG81b2QifQ.1J-FHx5dBu0zO-y8iV8CLA</string>
+    <string name="no_connection">No Connection</string>
+    <string name="time_out">Time Out</string>
+    <string name="address_list">لیست آدرس ها</string>
+    <string name="exit_app">برای خروج از برنامه بازگشت را کلیک کنید</string>
+    <string name="name_and_family">نام و نام خانوادگی:</string>
+    <string name="mobile">موبایل:</string>
+    <string name="address">آدرس</string>
+    <string name="register" >ثبت نام</string>
+    <string name="enter_your_login_information">اطلاعات ورود خود را وارد نمایید</string>
+    <string name="name">نام</string>
+    <string name="family">فامیلی</string>
+    <string name="mobile_number">موبایل</string>
+    <string name="phone">تلفن ثابت</string>
+    <string name="female">خانم</string>
+    <string name="male">آقا</string>
+    <string name="gender">جنسیت</string>
+    <string name="address_registration">ثبت آدرس</string>
+    <string name="user_location_permission_not_granted">مجوز مکان کاربر داده نشده است</string>
+    <string name="user_location_permission_explanation">توضیح مجوز مکان کاربر</string>
+    <string name="select_your_location">موقعیت انتخابی</string>
+    <string name="confirmation">تایید</string>
+    <string name="not_validate_phone_number">شماره موبایل وارد شده درست نیست. شماره باید با ۰۹ شروع شود</string>
+    <string name="empty_phone_number">شماره موبایل وارد نشده است. شماره باید با ۰۹ شروع شود</string>
+    <string name="registration_completed_successfully">ثبت با موفقیت انجام شد</string>
+    <string name="mobile_number_must_be_11_digits">شماره موبایل باید ۱۱ رقم باشد</string>
+    <string name="phone_number_must_be_11_digits">شماره تلفن باید ۱۱ رقم باشد</string>
+    <string name="mandatory">اجباری</string>
+</resources>
